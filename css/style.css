@@ -138,7 +138,6 @@ img {
 .header-icon:hover,
 .header-icon:focus {
   fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel-link {
@@ -152,8 +151,7 @@ img {
 
 /* ---------------hero---------------------- */
 .hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/Img.jpg');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/Img.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -256,9 +254,29 @@ img {
 }
 .work-list {
   display: flex;
+  
+}
+.work-item{
+position: relative;
 }
 .work-item:not(:last-child) {
   margin-right: 30px;
+  
+}
+.work-text {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 27px 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 /* --------------command-------------- */
 .command {
@@ -285,8 +303,7 @@ img {
   background-color: #ffffff;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .comand-tumb {
@@ -501,8 +518,7 @@ img {
   border-radius: 4px;
   border: transparent;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -529,8 +545,7 @@ img {
   transition: 250ms linear;
 }
 .works-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .works-item:hover .works-top-text {
   transform: translateY(0);
@@ -553,11 +568,9 @@ img {
   height: 100%;
   width: 100%;
   transform: translateY(100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .works-tumb {
   padding: 20px 24px;
@@ -594,8 +607,7 @@ img {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -614,9 +626,9 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop-close-btn {
-  /* padding: 9px; */
 
-    display: flex;
+
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -636,5 +648,5 @@ img {
 .backdrop-icon:hover,
 .backdrop-icon:focus {
   fill: var(--accent-color);
-  /* -------------не удается поставить иконку в кружок--------- */
+
 }
